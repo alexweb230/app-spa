@@ -1,0 +1,23 @@
+@import "../../assets/scss/core/vars.scss";
+@import "../../assets/scss/core/mixins.scss";
+header{
+  border-top: 8px solid $blue-base;
+  .inner-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+     .logo{
+       font-size: rem(33);
+       color: #364A5D;
+       font-weight: $bold;
+       i{
+         color: $green;
+       }
+       .slogan{
+         font-size: rem(12);
+         color: silver;
+         vertical-align: middle;
+       }
+     }
+  }
+}

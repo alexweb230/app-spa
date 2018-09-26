@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+@import "./assets/scss/core/vars";
+@import "./assets/scss/core/normalize";
+@import "./assets/scss/core/settings";
+@import "./assets/scss/core/buttons";
+@import "./assets/scss/core/mixins";
+
+@import "./assets/scss/themes";
