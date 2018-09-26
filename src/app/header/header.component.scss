@@ -20,4 +20,13 @@ header{
        }
      }
   }
+  .center-header{
+    .title-box{
+      .slogan{
+        color: $silver;
+        font-size: rem(15);
+        margin-top: 11px;
+      } 
+    }
+  }
 }
