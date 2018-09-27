@@ -21,6 +21,8 @@ header{
      }
   }
   .center-header{
+    display: flex;
+    justify-content: space-between;
     .title-box{
       .slogan{
         color: $silver;

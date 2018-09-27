@@ -3,6 +3,26 @@
   background-color: transparent;
   padding: 0;
   border: none;
+  &.soc {
+    width: 43px;
+    height: 38px;
+    border-radius: 2px;
+    &.tw {
+      background-color: #00abed;
+    }
+    &.fb {
+      background-color: #3b5997;
+    }
+    &.ron {
+      background-color: #e94b89;
+    }
+    &.gl {
+      background-color: #db4939;
+    }
+  }
+  &.sp {
+    background-color: #598727;
+  }
 }
 
 
