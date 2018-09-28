@@ -1,8 +1,12 @@
 @import "../../assets/scss/core/vars.scss";
 @import "../../assets/scss/core/mixins.scss";
+
+
+
 header{
   border-top: 8px solid $blue-base;
   min-height: 290px;
+  position: relative;
   .inner-header{
     display: flex;
     justify-content: space-between;
@@ -24,11 +28,15 @@ header{
   .center-header{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
     .title-box{
       .slogan{
         color: $silver;
         font-size: rem(15);
-        margin-top: 11px;
+        margin-top: 12px;
       } 
     }
     .buttons{
