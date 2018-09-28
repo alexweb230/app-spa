@@ -11,7 +11,7 @@
     &:before{
       content: '';
       position: absolute;
-      background-image:url("/assets/img/png/sprite.png");
+      background-image:$sprite;
     }
     &.tw {
       background-color: #00abed;
@@ -49,8 +49,8 @@
       &:before{
         width: 19px;
         height: 20px;
-        left: 10px;
-        top: 8px;
+        left: 12px;
+        top: 9px;
         background-position: -73px 0px;
       }
     }
@@ -60,7 +60,7 @@
     &:before{
       width: 18px;
       height: 20px;
-      left: 11px;
+      left: 12px;
       top: 7px;
       background-position: -91px 0px;
     }
