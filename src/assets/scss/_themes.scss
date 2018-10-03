@@ -1,7 +1,27 @@
-
-.h1{
- font-size: rem(22);
- color: $silver;
- font-weight: $reg;
- margin: 0;
+.h1 {
+  font-size: rem(22);
+  color: $silver;
+  font-weight: $reg;
+  margin: 0;
 }
+
+.mat-tab-labels {
+  justify-content: center;
+  .mat-tab-label {
+    padding-left: 0;
+    padding-right: 0;
+    min-width: initial;
+    margin-right: 30px;
+    opacity: 1;
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+    .mat-tab-label-content {
+      color: $white;
+      font-weight: $bold;
+      font-size: rem(13);
+      text-transform: capitalize;
+    }
+  }
+}
+
