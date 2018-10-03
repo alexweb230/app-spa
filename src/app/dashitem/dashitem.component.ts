@@ -16,7 +16,7 @@ export class DashitemComponent implements OnInit {
     }
     plainGalleryRow: PlainGalleryConfig = {
         strategy: PlainGalleryStrategy.ROW,
-        layout: new LineLayout({width: '180px', height: '80px'}, {length: 1, wrap: true}, 'flex-start')
+        layout: new LineLayout({width: '100%', height: '100%'}, {length: 1, wrap: true}, 'flex-start')
     };
 
     images: Image[] = [

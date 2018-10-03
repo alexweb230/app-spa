@@ -1,0 +1,40 @@
+@import "../../assets/scss/core/vars.scss";
+
+.dashboard-item {
+  width: 270px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 3px;
+  position: relative;
+  .zoom {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -16px;
+    margin-left: -22px;
+    width: 42px;
+    height: 38px;
+    border-radius: 2px;
+    background-color: #19bb9b;
+    z-index: 9;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 1;
+    transition: 0.3s;
+    &:before {
+      content: '';
+      position: absolute;
+      top:0;
+      left:0;
+      background-image: $sprite;
+      width: 19px;
+      height: 19px;
+      background-position: 0px 109px;
+    }
+  }
+  &:hover {
+    .zoom {
+      opacity: 1;
+    }
+  }
+}
