@@ -11,6 +11,12 @@ import {MatButtonModule, MatCheckboxModule, MatInputModule, MatTabsModule} from 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashitemComponent } from './dashitem/dashitem.component';
 
+import 'hammerjs';
+import 'mousetrap';
+import {ModalGalleryModule} from 'angular-modal-gallery';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +32,9 @@ import { DashitemComponent } from './dashitem/dashitem.component';
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
-    MatTabsModule
+    MatTabsModule,
+    ModalGalleryModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
