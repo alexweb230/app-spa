@@ -9,13 +9,15 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatInputModule, MatTabsModule} from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashitemComponent } from './dashitem/dashitem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainNavComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashitemComponent
   ],
   imports: [
     BrowserModule,
