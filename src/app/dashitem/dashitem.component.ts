@@ -51,7 +51,7 @@ export class DashitemComponent implements OnInit {
         new Image(
             3,
             {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img4.jpg',
+                img: '../assets/img/jpg/1.jpg',
                 description: 'Description 4',
                 extUrl: 'http://www.google.com'
             }
@@ -59,11 +59,9 @@ export class DashitemComponent implements OnInit {
         new Image(
             4,
             {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img5.jpg'
+                img: '../assets/img/jpg/2.jpg'
             },
-            {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/thumbs/img5.jpg'
-            }
+
         )
     ];
 
