@@ -22,46 +22,23 @@ export class DashitemComponent implements OnInit {
     images: Image[] = [
         new Image(
             0,
-            {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img1.jpg',
-                extUrl: 'http://www.google.com'
-            }
+            { img: '../assets/img/jpg/1.jpg' }
         ),
         new Image(
             1,
-            {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img2.png',
-                description: 'Description 2'
-            }
+            { img: '../assets/img/jpg/2.jpg' }
         ),
         new Image(
             2,
-            {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/img3.jpg',
-                description: 'Description 3',
-                extUrl: 'http://www.google.com'
-            },
-            {
-                img: 'https://raw.githubusercontent.com/Ks89/angular-modal-gallery/v4/examples/systemjs/assets/images/gallery/thumbs/img3.png',
-                title: 'custom title 2',
-                alt: 'custom alt 2',
-                ariaLabel: 'arial label 2'
-            }
+            { img: '../assets/img/jpg/3.jpg' }
         ),
         new Image(
             3,
-            {
-                img: '../assets/img/jpg/1.jpg',
-                description: 'Description 4',
-                extUrl: 'http://www.google.com'
-            }
+            { img: '../assets/img/jpg/5.jpg' }
         ),
         new Image(
             4,
-            {
-                img: '../assets/img/jpg/2.jpg'
-            },
-
+            { img: '../assets/img/jpg/6.jpg' }
         )
     ];
 
