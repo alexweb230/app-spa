@@ -25,16 +25,24 @@
         text-transform: capitalize;
         position: relative;
         padding-right: 17px;
-        &:after{
+        &:after {
           content: '/';
           position: absolute;
           right: 0;
-          top:0;
+          top: 0;
+        }
+      }
+      &:nth-last-child(1) {
+        .mat-tab-label-content {
+          padding-right: 0;
+          &:after {
+            content: '';
+          }
         }
       }
     }
   }
-  .mat-ink-bar{
+  .mat-ink-bar {
     background-color: $white !important;
   }
 }
