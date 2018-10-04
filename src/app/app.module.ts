@@ -9,7 +9,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatInputModule, MatTabsModule} from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { DashitemComponent } from './dashitem/dashitem.component';
+
 
 import 'hammerjs';
 import 'mousetrap';
@@ -22,8 +22,7 @@ import {ModalGalleryModule} from 'angular-modal-gallery';
     AppComponent,
     HeaderComponent,
     MainNavComponent,
-    DashboardComponent,
-    DashitemComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
