@@ -1,11 +1,13 @@
 import {Component, OnInit} from '@angular/core';
-
+import {Dashboard} from './model/dashboard';
+import{DASHBOARD} from './model/dashboard-list';
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
+    dashboard = DASHBOARD;
 
     tabs = {
         tab_1: 'all',
@@ -16,6 +18,8 @@ export class DashboardComponent implements OnInit {
         tab_6: 'Illustration',
         tab_7: 'Photography'
     }
+
+
 
 
 

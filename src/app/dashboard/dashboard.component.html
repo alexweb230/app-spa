@@ -2,14 +2,14 @@
   <div class="content">
     <mat-tab-group>
       <mat-tab label="{{tabs.tab_1}}">
-        <div class="dashboard-item">
+        <div class="dashboard-item" *ngFor="let dash of dashboard">
           <a href="#" class="img">
-            <img src="/assets/img/jpg/1.jpg" alt="">
+            <img src="{{dash.img}}" alt="">
           </a>
           <a href="#" class="link">
-            Working in Shop
+            {{dash.link}}
           </a>
-          <p class="made">Branding / Design </p>
+          <p class="made">{{dash.made}}</p>
           <span class="zoom"></span>
         </div>
       </mat-tab>
