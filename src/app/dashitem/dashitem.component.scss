@@ -19,17 +19,17 @@
     z-index: 9;
     cursor: pointer;
     pointer-events: none;
-    opacity: 1;
+    opacity: 0;
     transition: 0.3s;
     &:before {
       content: '';
       position: absolute;
-      top:0;
-      left:0;
+      top: 10px;
+      left: 11px;
       background-image: $sprite;
       width: 19px;
       height: 19px;
-      background-position: 0px 109px;
+      background-position:-109px 0px;
     }
   }
   &:hover {
