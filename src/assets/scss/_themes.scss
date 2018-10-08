@@ -45,4 +45,12 @@
   .mat-ink-bar {
     background-color: $white !important;
   }
+
+}
+.mat-tab-body-wrapper{
+  .mat-tab-body-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

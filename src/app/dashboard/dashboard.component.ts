@@ -18,13 +18,6 @@ export class DashboardComponent implements OnInit {
         tab_6: 'Illustration',
         tab_7: 'Photography'
     }
-
-
-
-
-
-
-
     constructor() {
     }
 
