@@ -1,7 +1,7 @@
 <div class="main-box dashboard">
   <div class="content dashboard-grid">
     <mat-tab-group>
-      <mat-tab label="{{tabs.tab_1}}">
+      <mat-tab *ngFor="let tab of tabs" label="{{tab.tab}}">
         <div class="dashboard-item" *ngFor="let dash of dashboard">
           <a href="#" class="img">
             <img src="{{dash.img}}" alt="">
@@ -13,12 +13,6 @@
           <span class="zoom"></span>
         </div>
       </mat-tab>
-      <mat-tab label="{{tabs.tab_2}}"> Content 2 </mat-tab>
-      <mat-tab label="{{tabs.tab_3}}"> Content 3 </mat-tab>
-      <mat-tab label="{{tabs.tab_4}}"> Content 3 </mat-tab>
-      <mat-tab label="{{tabs.tab_5}}"> Content 3 </mat-tab>
-      <mat-tab label="{{tabs.tab_6}}"> Content 3 </mat-tab>
-      <mat-tab label="{{tabs.tab_7}}"> Content 3 </mat-tab>
     </mat-tab-group>
   </div>
 </div>
