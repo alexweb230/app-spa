@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
 import 'mousetrap';
 import {ModalGalleryModule} from 'angular-modal-gallery';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -22,7 +23,8 @@ import {ModalGalleryModule} from 'angular-modal-gallery';
     AppComponent,
     HeaderComponent,
     MainNavComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
