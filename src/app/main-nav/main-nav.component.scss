@@ -5,6 +5,7 @@ nav {
   ul {
     display: flex;
     li {
+      margin-right: 3px;
       a {
         font-size: rem(13);
         color: $silver;
