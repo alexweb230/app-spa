@@ -4,6 +4,16 @@
   font-weight: $reg;
   margin: 0;
 }
+.h3{
+  @extend .h1;
+  font-size: rem(16);
+  text-transform: uppercase;
+}
+.soc-buttons{
+  .foot-soc{
+    margin-right: 2px;
+  }
+}
 .mat-tab-label-container{
   padding-bottom: 30px;
 }

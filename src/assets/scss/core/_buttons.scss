@@ -65,6 +65,15 @@
       background-position: -91px 0px;
     }
   }
+  &.foot-soc{
+    width: 43px;
+    height: 37px;
+    border-radius: 2px;
+    background-color: #ebeff1;
+    &:hover{
+      background-color: #00abed;
+    }
+  }
 }
 
 
