@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {DASHBOARD} from './model/dashboard-list';
-
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -8,16 +7,16 @@ import {DASHBOARD} from './model/dashboard-list';
 })
 export class DashboardComponent implements OnInit {
     dashboard = DASHBOARD;
+    tabs = {
+        tab_1: 'all',
+        tab_2: 'Design',
+        tab_3: 'Branding',
+        tab_4: 'Graphic',
+        tab_5: 'Animation',
+        tab_6: 'Illustration',
+        tab_7: 'Photography'
+    }
 
-    tabs = [
-        { tab: 'all' },
-        { tab: 'Design' },
-        { tab: 'Branding' },
-        { tab: 'Graphic' },
-        { tab: 'Animation' },
-        { tab: 'Illustration' },
-        { tab: 'Photography' }
-    ]
 
     constructor() {
     }
