@@ -1,3 +1,4 @@
+
 .but {
   display: inline-block;
   background-color: transparent;
@@ -8,14 +9,14 @@
     height: 38px;
     border-radius: 2px;
     position: relative;
-    &:before{
+    &:before {
       content: '';
       position: absolute;
-      background-image:$sprite;
+      background-image: $sprite;
     }
     &.tw {
       background-color: #00abed;
-      &:before{
+      &:before {
         width: 24px;
         height: 19px;
         left: 9px;
@@ -25,7 +26,7 @@
     }
     &.fb {
       background-color: #3b5997;
-      &:before{
+      &:before {
         width: 12px;
         height: 23px;
         left: 16px;
@@ -36,7 +37,7 @@
 
     &.ron {
       background-color: #e94b89;
-      &:before{
+      &:before {
         width: 20px;
         height: 20px;
         left: 10px;
@@ -46,7 +47,7 @@
     }
     &.gl {
       background-color: #db4939;
-      &:before{
+      &:before {
         width: 19px;
         height: 20px;
         left: 12px;
@@ -57,7 +58,7 @@
   }
   &.sp {
     background-color: #598727;
-    &:before{
+    &:before {
       width: 18px;
       height: 20px;
       left: 12px;
@@ -65,13 +66,89 @@
       background-position: -91px 0px;
     }
   }
-  &.foot-soc{
+  &.foot-soc {
     width: 43px;
     height: 37px;
     border-radius: 2px;
     background-color: #ebeff1;
-    &:hover{
+    position: relative;
+    &:hover {
       background-color: #00abed;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: $sprite;
+    }
+    &.tw {
+      &:before {
+        top: 11px;
+        left: 12px;
+        width: 18px;
+        height: 14px;
+        background-position: 0px -40px;
+      }
+      &:hover{
+        &:before {
+          background-position: 0px -23px;
+        }
+      }
+    }
+    &.fb {
+      &:before {
+        top: 11px;
+        left: 17px;
+        width: 7px;
+        height: 14px;
+        background-position: -19px -40px;
+      }
+      &:hover{
+        &:before {
+          background-position: -19px -24px;
+        }
+      }
+    }
+    &.ins{
+      &:before {
+        top: 11px;
+        left: 14px;
+        width: 14px;
+        height: 14px;
+        background-position: -30px -40px;
+      }
+      &:hover{
+        &:before {
+          background-position: -28px -24px;
+        }
+      }
+    }
+    &.layer{
+      &:before {
+        top: 11px;
+        left: 14px;
+        width: 14px;
+        height: 14px;
+        background-position: -46px -40px;
+      }
+      &:hover{
+        &:before {
+          background-position: -44px -24px;
+        }
+      }
+    }
+    &.flick{
+      &:before {
+        top: 15px;
+        left: 13px;
+        width: 16px;
+        height: 7px;
+        background-position: -62px -41px;
+      }
+      &:hover{
+        &:before {
+          background-position: -60px -26px;
+        }
+      }
     }
   }
 }
