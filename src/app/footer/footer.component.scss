@@ -38,6 +38,29 @@ footer{
           margin-top: 36px;
         }
       }
+      .grid-img{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 270px;
+        padding-top: 36px;
+        .grid-img-item{
+          width: 62px;
+          height: 54px;
+          border: 1px solid #ecf0f1;
+          text-align: center;
+          overflow: hidden;
+          padding: 3px;
+          margin-bottom: 7px;
+          &:hover{
+            border-color:transparent;
+            outline: 2px solid #1abc9c;
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

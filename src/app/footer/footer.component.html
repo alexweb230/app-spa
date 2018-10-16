@@ -71,7 +71,9 @@
     <section class="inner-footer-item">
       <h3 class="h3">FLICKR PHOTOSTREAM</h3>
       <div class="grid-img">
-
+        <a href="#" class="grid-img-item" *ngFor="let gritem of gridImg">
+          <img src="{{gritem.src}}" alt="">
+        </a>
       </div>
     </section>
   </div>
