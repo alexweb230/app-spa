@@ -6,7 +6,6 @@ footer{
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
-    border-bottom: 1px solid #EBF0F1;
     .inner-footer-item{
       width: 270px;
       p{
@@ -58,6 +57,33 @@ footer{
           }
           img{
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer{
+    .bottom-footer-wrap{
+      border-top: 1px solid #EBF0F1;
+      display: flex;
+      min-height: 80px;
+      justify-content: space-between;
+      align-items: center;
+      color: $silver;
+      font-size: rem(12);
+      .cop{
+
+      }
+      .footer-nav{
+        display: flex;
+        justify-content: flex-end;
+        .footer-nav-item{
+          margin-left: 20px;
+          a{
+            color: inherit;
+            &:hover{
+              color: $green;
+            }
           }
         }
       }

@@ -44,7 +44,15 @@ export class FooterComponent implements OnInit {
         {
             src: '/assets/img/png/12.png'
         },
-    ]
+    ];
+    footerNav = [
+        {navitem: 'Home'},
+        {navitem: 'About'},
+        {navitem: 'Portfolio'},
+        {navitem: 'Blog'},
+        {navitem: 'Features'},
+        {navitem: 'Contact'}
+    ];
 
 
     constructor() {
