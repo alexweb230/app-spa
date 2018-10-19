@@ -4,6 +4,12 @@
   background-color: transparent;
   padding: 0;
   border: none;
+  &.btn-search{
+    background-image: $sprite;
+    width:19px;
+    height: 19px;
+    background-position: 0px 0px;
+  }
   &.soc {
     width: 43px;
     height: 38px;

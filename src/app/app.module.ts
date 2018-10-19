@@ -36,6 +36,7 @@ import { FooterComponent } from './footer/footer.component';
     MatTabsModule,
     ModalGalleryModule.forRoot(),
 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
