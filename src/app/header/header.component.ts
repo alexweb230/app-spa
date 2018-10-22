@@ -10,10 +10,14 @@ export class HeaderComponent implements OnInit {
     slogan = 'theme more stylish than any other on ThemeForest.';
     active = false;
     expand = false;
+    type = 'button';
 
     onClick(){
         this.active = !this.active;
         this.expand = !this.expand;
+        setTimeout(function () {
+
+        }, 1000);
     }
 
 
