@@ -7,12 +7,20 @@
     <div class="nav-wrapper">
       <app-main-nav></app-main-nav>
     </div>
-    <div class="search-box">
+    <div
+            class="search-box"
+            [ngClass]="expand ? 'expand': '' "
+    >
       <form class="example-form">
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Leave a comment" type="search">
         </mat-form-field>
-        <button class="but btn-search" type="button"></button>
+        <button
+                class="but btn-search"
+                type="button"
+                (click)="onClick()"
+                [ngClass]="active ? 'active': '' ">
+        </button>
       </form>
     </div>
   </div>
