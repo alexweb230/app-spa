@@ -14,9 +14,7 @@ export class HeaderComponent implements OnInit {
     onClick(){
         this.active = !this.active;
         this.expand = !this.expand;
-        // setTimeout(function () {
-        //
-        // }, 1000);
+
     }
 
 

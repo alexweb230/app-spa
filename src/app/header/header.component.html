@@ -1,41 +1,37 @@
 <header>
-  <div class="inner-header content">
-    <a href="/" class="logo">
-      C<i>a</i>lm
-      <span class="slogan">Free Creative Simple Portfolio</span>
-    </a>
-    <div class="nav-wrapper">
-      <app-main-nav></app-main-nav>
+    <div class="inner-header content">
+        <a href="/" class="logo">
+            C<i>a</i>lm
+            <span class="slogan">Free Creative Simple Portfolio</span>
+        </a>
+        <app-main-nav></app-main-nav>
+        <form
+                class="example-form search-box"
+                [ngClass]="expand ? 'expand': '' ">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Leave a comment" type="search">
+            </mat-form-field>
+            <button
+                    class="but btn-search"
+                    type="button"
+                    (click)="onClick()"
+                    [ngClass]="active ? 'active': '' ">
+            </button>
+        </form>
+
     </div>
-    <div
-            class="search-box"
-            [ngClass]="expand ? 'expand': '' "
-    >
-      <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Leave a comment" type="search">
-        </mat-form-field>
-        <button
-                class="but btn-search"
-                type="button"
-                (click)="onClick()"
-                [ngClass]="active ? 'active': '' ">
-        </button>
-      </form>
+    <div class="center-header content">
+        <div class="title-box">
+            <h1 class="h1">{{title}}</h1>
+            <p class="slogan">{{slogan}}</p>
+        </div>
+        <div class="buttons">
+            <p>FIND US ONLINE</p>
+            <a href="#" class="but soc tw"></a>
+            <a href="#" class="but soc fb"></a>
+            <a href="#" class="but soc ron"></a>
+            <a href="#" class="but soc gl"></a>
+            <a href="#" class="but soc sp"></a>
+        </div>
     </div>
-  </div>
-  <div class="center-header content">
-    <div class="title-box">
-      <h1 class="h1">{{title}}</h1>
-      <p class="slogan">{{slogan}}</p>
-    </div>
-    <div class="buttons">
-      <p>FIND US ONLINE</p>
-      <a href="#" class="but soc tw"></a>
-      <a href="#" class="but soc fb"></a>
-      <a href="#" class="but soc ron"></a>
-      <a href="#" class="but soc gl"></a>
-      <a href="#" class="but soc sp"></a>
-    </div>
-  </div>
 </header>

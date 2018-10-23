@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    position: relative;
      .logo{
        font-size: rem(33);
        color: #364A5D;
@@ -24,6 +25,29 @@ header{
          vertical-align: middle;
        }
      }
+    .search-box{
+      position: absolute;
+      right: 15px;
+      top:0;
+      width: 22px;
+      overflow: hidden;
+      transition: 0.3s;
+      background-color: $white;
+      &.expand{
+        width: 300px;
+        .mat-form-field{
+          width: 100%;
+        }
+      }
+      .btn-search{
+        position: absolute;
+        right: 0;
+        top:28px;
+      }
+      .mat-form-field{
+        width: 0;
+      }
+    }
   }
   .center-header{
     display: flex;
