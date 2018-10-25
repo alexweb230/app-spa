@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
     onClick(){
         this.active = !this.active;
         this.expand = !this.expand;
+        this
     }
 
 
