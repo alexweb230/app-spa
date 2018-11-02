@@ -15,6 +15,8 @@ import 'hammerjs';
 import 'mousetrap';
 import {ModalGalleryModule} from 'angular-modal-gallery';
 import { FooterComponent } from './footer/footer.component';
+import {DashboardService} from './services/dashboard.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -35,10 +37,10 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     MatTabsModule,
     ModalGalleryModule.forRoot(),
-
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

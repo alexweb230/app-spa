@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import{Observable} from 'rxjs/index';
+
 import {Dashboard} from '../dashboard/model/dashboard';
-import {DASHBOARD} from '../dashboard/model/dashboard-list';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DashboardService {
+  private _url: string = '/assets/json/data/dashboard.json';
 
-  constructor() { }
+  constructor(private http: HttpClient) {}
 
   getDash(): Observable<Dashboard[]>{
-    return of(DASHBOARD);
+    return this.http.get<Dashboard[]>(this._url);
   }
+
+
 }

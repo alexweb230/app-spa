@@ -1,5 +1,5 @@
 export class Dashboard {
     img: string;
-    link:string;
-    made:string;
+    link: string;
+    made: string;
 }

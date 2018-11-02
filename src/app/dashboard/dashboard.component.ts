@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Dashboard} from './model/dashboard';
+
 import {DashboardService} from '../services/dashboard.service';
 
 @Component({
@@ -8,7 +8,7 @@ import {DashboardService} from '../services/dashboard.service';
     styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-    dashboard = Dashboard;
+    dashboard = [];
     tabs = {
         tab_1: 'all',
         tab_2: 'Design',
@@ -23,11 +23,9 @@ export class DashboardComponent implements OnInit {
     constructor(private dashService: DashboardService) {
     }
 
-    getDash(): void {
-        this.dashService.getDash().subscribe(dashboard => this.dashboard = dashboard);
-    }
+
     ngOnInit() {
-        this.getDash();
+      this.dashService.getDash().subscribe(data => this.dashboard = data);
     }
 
 }
