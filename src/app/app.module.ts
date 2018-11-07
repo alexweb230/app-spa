@@ -17,6 +17,7 @@ import {ModalGalleryModule} from 'angular-modal-gallery';
 import { FooterComponent } from './footer/footer.component';
 import {DashboardService} from './services/dashboard.service';
 import {HttpClientModule} from '@angular/common/http';
+import { SearchPipe } from './pipes/search.pipe';
 
 
 
@@ -26,7 +27,8 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     MainNavComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
