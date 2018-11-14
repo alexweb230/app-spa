@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import {DashboardService} from './services/dashboard.service';
 import {HttpClientModule} from '@angular/common/http';
 import { SearchPipe } from './pipes/search.pipe';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -39,7 +40,8 @@ import { SearchPipe } from './pipes/search.pipe';
     MatInputModule,
     MatTabsModule,
     ModalGalleryModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [DashboardService],

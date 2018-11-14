@@ -5,8 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(dashboard, value): any {
+     return dashboard.filter(dash => {
+       return dash.made.includes(value);
+     });
   }
 
 }
