@@ -19,6 +19,7 @@ import {DashboardService} from './services/dashboard.service';
 import {HttpClientModule} from '@angular/common/http';
 import { SearchPipe } from './pipes/search.pipe';
 import {FormsModule} from '@angular/forms';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -29,7 +30,8 @@ import {FormsModule} from '@angular/forms';
     MainNavComponent,
     DashboardComponent,
     FooterComponent,
-    SearchPipe
+    SearchPipe,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
