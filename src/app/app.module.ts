@@ -20,6 +20,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { SearchPipe } from './pipes/search.pipe';
 import {FormsModule} from '@angular/forms';
 import { BlogComponent } from './blog/blog.component';
+import { NotfoundpageComponent } from './notfoundpage/notfoundpage.component';
 
 
 
@@ -31,7 +32,8 @@ import { BlogComponent } from './blog/blog.component';
     DashboardComponent,
     FooterComponent,
     SearchPipe,
-    BlogComponent
+    BlogComponent,
+    NotfoundpageComponent
   ],
   imports: [
     BrowserModule,
