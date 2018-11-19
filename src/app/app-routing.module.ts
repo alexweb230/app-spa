@@ -4,7 +4,7 @@ import {BlogComponent} from './blog/blog.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    {path: '', redirectTo: 'home', pathMatch: 'full' },
     {path: 'blog', component: BlogComponent},
     {path: 'home', component: DashboardComponent},
 ];
