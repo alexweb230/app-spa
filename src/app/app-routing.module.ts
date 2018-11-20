@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {BlogComponent} from './blog/blog.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import {NotfoundpageComponent} from './notfoundpage/notfoundpage.component';
+import {NotfoundComponent} from './notfound/notfound.component';
 
 const routes: Routes = [
+    // {path: '', component: DashboardComponent },
     {path: '', redirectTo: 'home', pathMatch: 'full' },
     {path: 'blog', component: BlogComponent},
     {path: 'home', component: DashboardComponent},
-    {path: '**', component: NotfoundpageComponent},
+    {path: '**', component: NotfoundComponent},
 ];
 
 @NgModule({
