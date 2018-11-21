@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 
 import {DashboardService} from '../services/dashboard.service';
 
+import {Router} from '@angular/router';
+
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -19,9 +21,18 @@ export class DashboardComponent implements OnInit {
         tab_7: 'Photography',
     }
 
-
-    constructor(private dashService: DashboardService) {
+    constructor(
+        private dashService: DashboardService,
+        private router: Router) {
     }
+
+    onSelect(dash){
+        console.log('test');
+       this.router.navigate(['/home', dash.id]);
+    }
+
+
+
 
 
     ngOnInit() {

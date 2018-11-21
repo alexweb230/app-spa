@@ -21,6 +21,7 @@ import { SearchPipe } from './pipes/search.pipe';
 import {FormsModule} from '@angular/forms';
 import { BlogComponent } from './blog/blog.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { DashboardDetailComponent } from './dashboard-detail/dashboard-detail.component';
 
 
 
@@ -33,7 +34,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FooterComponent,
     SearchPipe,
     BlogComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    DashboardDetailComponent
   ],
   imports: [
     BrowserModule,

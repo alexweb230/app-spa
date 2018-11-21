@@ -2,14 +2,14 @@
   <div class="content dashboard-grid">
     <mat-tab-group>
       <mat-tab label="{{tabs.tab_1}}">
-        <div class="dashboard-item" *ngFor="let dash of dashboard">
-          <a href="#" class="img">
+        <div class="dashboard-item" *ngFor="let dash of dashboard" (click)="onSelect(dash)">
+          <a  class="img"  >
             <img src="{{dash.img}}" alt="">
           </a>
           <a href="#" class="link">
             {{dash.link}}
           </a>
-          <span class="made">{{dash.made}}</span>
+          <span class="made">{{dash.made}}{{dash.id}}</span>
         </div>
       </mat-tab>
       <mat-tab label="{{tabs.tab_2}}"> Content 2 </mat-tab>
@@ -21,4 +21,6 @@
     </mat-tab-group>
   </div>
 </div>
+
+
 
