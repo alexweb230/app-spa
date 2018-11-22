@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-detail',
@@ -8,13 +8,33 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class DashboardDetailComponent implements OnInit {
   public dashId;
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+      private route: ActivatedRoute,
+      private router: Router,
+  ) { }
 
   ngOnInit() {
 
-    let id = parseInt(this.route.snapshot.paramMap.get('id'));
+    // let id = parseInt(this.route.snapshot.paramMap.get('id'));
+    //
+    // this.dashId = id;
 
-    this.dashId = id;
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      let id = parseInt (params.get('id'));
+
+        this.dashId = id;
+    });
   }
+
+
+  goPrevious(){
+    let previousId = this.dashId - 1;
+    this.router.navigate(['/home', previousId]);
+  }
+
+    goNext(){
+        let nextId = this.dashId + 1;
+        this.router.navigate(['/home', nextId]);
+    }
 
 }
