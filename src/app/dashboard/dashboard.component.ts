@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import {DashboardService} from '../services/dashboard.service';
 
-import {Router} from '@angular/router';
+import {Router, ActivatedRoute, ParamMap} from '@angular/router';
 
 @Component({
     selector: 'app-dashboard',
@@ -11,6 +11,7 @@ import {Router} from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
     dashboard = [];
+    public selectedId;
     tabs = {
         tab_1: 'all',
         tab_2: 'Design',
@@ -21,22 +22,29 @@ export class DashboardComponent implements OnInit {
         tab_7: 'Photography',
     }
 
-    constructor(
-        private dashService: DashboardService,
-        private router: Router) {
+    constructor(private dashService: DashboardService,
+                private router: Router,
+                private route: ActivatedRoute) {
     }
 
-    onSelect(dash){
-        console.log('test');
-       this.router.navigate(['/home', dash.id]);
+    onSelect(dash) {
+        this.router.navigate(['/home', dash.id]);
     }
-
-
-
 
 
     ngOnInit() {
-      this.dashService.getDash().subscribe(data => this.dashboard = data);
+        this.dashService.getDash().subscribe(data => this.dashboard = data);
+
+        this.route.paramMap.subscribe((params: ParamMap) => {
+            let id = parseInt(params.get('id'));
+            this.selectedId = id;
+        });
+    }
+
+    isSelected(dash){
+
+        return dash.id === this.selectedId;
+
     }
 
 }

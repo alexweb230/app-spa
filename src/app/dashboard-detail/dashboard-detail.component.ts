@@ -10,8 +10,7 @@ export class DashboardDetailComponent implements OnInit {
     public dashId;
 
     constructor(private route: ActivatedRoute,
-                private router: Router,) {
-    }
+                private router: Router) {}
 
     ngOnInit() {
         this.route.paramMap.subscribe((params: ParamMap) => {
@@ -29,6 +28,13 @@ export class DashboardDetailComponent implements OnInit {
     goNext() {
         let nextId = this.dashId + 1;
         this.router.navigate(['/home', nextId]);
+    }
+
+    gotoDashboard(){
+
+        let selectedId = this.dashId ? this.dashId : null;
+
+        this.router.navigate(['/home', {id: selectedId}]);
     }
 
 }

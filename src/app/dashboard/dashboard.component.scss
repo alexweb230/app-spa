@@ -30,6 +30,9 @@
       color: #bdc3c7;
       font-size: rem(12);
     }
+    &.selected{
+      opacity: 0.3;
+    }
   }
 }
 
