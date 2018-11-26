@@ -28,6 +28,7 @@ export class DashboardDetailComponent implements OnInit {
     goNext() {
         let nextId = this.dashId + 1;
         this.router.navigate(['/home', nextId]);
+
     }
 
     gotoDashboard(){
