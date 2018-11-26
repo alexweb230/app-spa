@@ -37,14 +37,13 @@ export class DashboardComponent implements OnInit {
 
         this.route.paramMap.subscribe((params: ParamMap) => {
             let id = parseInt(params.get('id'));
+
             this.selectedId = id;
         });
     }
 
     isSelected(dash){
-
-        return dash.id === this.selectedId;
-
+         return dash.id == this.selectedId;
     }
 
 }

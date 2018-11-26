@@ -15,6 +15,9 @@
       display: block;
       overflow: hidden;
       border-radius: 3px;
+      &.selected{
+        filter: grayscale(100%);
+      }
     }
     .link{
       display: block;
@@ -29,9 +32,6 @@
       text-align: center;
       color: #bdc3c7;
       font-size: rem(12);
-    }
-    &.selected{
-      opacity: 0.3;
     }
   }
 }

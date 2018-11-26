@@ -33,6 +33,7 @@ export class DashboardDetailComponent implements OnInit {
     gotoDashboard(){
 
         let selectedId = this.dashId ? this.dashId : null;
+         console.log(selectedId);
 
         this.router.navigate(['/home', {id: selectedId}]);
     }
