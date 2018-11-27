@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -18,14 +20,16 @@ export class HeaderComponent implements OnInit {
         this.active = !this.active;
         this.expand = !this.expand;
 
+        console.log(this.routeBlog);
     }
 
 
+    constructor(private router: Router) { }
 
 
+    // routeBlog = this.router.navigate(['/blog']);
 
 
-    constructor() { }
 
     ngOnInit() {
     }
