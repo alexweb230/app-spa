@@ -12,11 +12,17 @@ export class HeaderComponent implements OnInit {
     active = false;
     expand = false;
 
+    blog = true;
+
     onClick(){
         this.active = !this.active;
         this.expand = !this.expand;
 
     }
+
+
+
+
 
 
     constructor() { }
