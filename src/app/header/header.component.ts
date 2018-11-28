@@ -20,15 +20,15 @@ export class HeaderComponent implements OnInit {
         this.active = !this.active;
         this.expand = !this.expand;
 
-        console.log(this.routeBlog);
+        // console.log(this.routeBlog);
     }
 
 
     constructor(private router: Router) { }
 
-
-    // routeBlog = this.router.navigate(['/blog']);
-
+     //
+     // routeBlog = this.router.navigate(['/blog']);
+     //
 
 
     ngOnInit() {
