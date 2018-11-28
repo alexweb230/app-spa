@@ -19,16 +19,18 @@ export class HeaderComponent implements OnInit {
     onClick(){
         this.active = !this.active;
         this.expand = !this.expand;
-
-        // console.log(this.routeBlog);
     }
 
 
-    constructor(private router: Router) { }
+    constructor(private router:Router) { }
 
-     //
-     // routeBlog = this.router.navigate(['/blog']);
-     //
+
+    getBlog(){
+        if (this.router.url === '/blog'){
+            return 'header-blog';
+        }
+    }
+
 
 
     ngOnInit() {
