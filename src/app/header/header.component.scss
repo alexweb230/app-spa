@@ -30,9 +30,9 @@ header {
       width: 22px;
       overflow: hidden;
       transition: 0.3s;
-      background-color: $white;
       &.expand {
         width: 50%;
+        background-color: $white;
         .mat-form-field {
           width: 100%;
         }
@@ -80,6 +80,7 @@ header {
       background-size: cover;
       max-width: 100%;
       height: 280px;
+      margin-top: 23px;
       & * {
         display: none;
       }
