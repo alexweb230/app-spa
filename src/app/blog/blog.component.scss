@@ -1,0 +1,31 @@
+@import "../../assets/scss/core/vars.scss";
+@import "../../assets/scss/core/mixins.scss";
+
+.blog-page{
+  background-color: $blue-base;
+  .blog{
+    background-color: $w;
+    border-radius: 5px;
+    position: relative;
+    top: -90px;
+    padding: 28px;
+    .left{
+      width: 770px;
+      .post{
+        img{
+          width: 100%;
+          border-radius: 2px;
+        }
+        .post-descr{
+
+        }
+      }
+    }
+    .right{
+      width: 310px;
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
