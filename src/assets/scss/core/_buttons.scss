@@ -4,9 +4,9 @@
   background-color: transparent;
   padding: 0;
   border: none;
-  &.btn-search{
+  &.btn-search {
     background-image: $sprite;
-    width:19px;
+    width: 19px;
     height: 19px;
     background-position: 0px 0px;
   }
@@ -94,7 +94,7 @@
         height: 14px;
         background-position: 0px -40px;
       }
-      &:hover{
+      &:hover {
         &:before {
           background-position: 0px -23px;
         }
@@ -108,13 +108,13 @@
         height: 14px;
         background-position: -19px -40px;
       }
-      &:hover{
+      &:hover {
         &:before {
           background-position: -19px -24px;
         }
       }
     }
-    &.ins{
+    &.ins {
       &:before {
         top: 11px;
         left: 14px;
@@ -122,13 +122,13 @@
         height: 14px;
         background-position: -30px -40px;
       }
-      &:hover{
+      &:hover {
         &:before {
           background-position: -28px -24px;
         }
       }
     }
-    &.layer{
+    &.layer {
       &:before {
         top: 11px;
         left: 14px;
@@ -136,13 +136,13 @@
         height: 14px;
         background-position: -46px -40px;
       }
-      &:hover{
+      &:hover {
         &:before {
           background-position: -44px -24px;
         }
       }
     }
-    &.flick{
+    &.flick {
       &:before {
         top: 15px;
         left: 13px;
@@ -150,10 +150,51 @@
         height: 7px;
         background-position: -62px -41px;
       }
-      &:hover{
+      &:hover {
         &:before {
           background-position: -60px -26px;
         }
+      }
+    }
+  }
+  &.post {
+    position: relative;
+    color: #d0d3d7;
+    font-size: 14px;
+    padding-left: 30px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: $sprite;
+    }
+    &.cal {
+      &:before {
+        width: 19px;
+        height: 20px;
+        background-position: -78px -22px;
+      }
+    }
+    &.com {
+      &:before {
+        width: 19px;
+        height: 19px;
+        background-position: -95px -23px;
+      }
+    }
+    &.news {
+      &:before {
+        width: 15px;
+        height: 20px;
+        background-position: -112px -20px;
+      }
+    }
+    &.view {
+      &:before {
+        width: 20px;
+        height: 15px;
+        background-position: -127px -22px;
       }
     }
   }
