@@ -1,34 +1,34 @@
 @import "../../assets/scss/core/vars.scss";
 @import "../../assets/scss/core/mixins.scss";
 
-.blog-page{
+.blog-page {
   background-color: $blue-base;
-  .blog{
+  .blog {
     background-color: $w;
     border-radius: 5px;
     position: relative;
     top: -90px;
     padding: 28px;
-    .left{
+    .left {
       width: 770px;
-      .post{
-        img{
+      .post {
+        img {
           width: 100%;
           border-radius: 2px;
         }
-        .post-descr{
-          .post-heading{
+        .post-descr {
+          .post-heading {
             display: grid;
-            grid-template-columns: 1fr 10fr  1fr;
-            grid-column-gap:12px;
-                    h2{
+            grid-template-columns: 1fr 10fr 1fr;
+            grid-column-gap: 12px;
+            h2 {
               font-size: rem(22);
               color: #34495e;
               margin: 0;
 
               grid-column: 2 / -1;
             }
-            .type{
+            .type {
               width: 60px;
               height: 60px;
               background-color: $green;
@@ -36,15 +36,15 @@
               border-radius: 2px;
               position: relative;
               grid-row: 1/ 3;
-              &.text{
-                &:before{
+              &.text {
+                &:before {
                   content: "";
                   width: 25px;
                   height: 25px;
                   background-position: -82px -42px;
                   background-image: $sprite;
                   position: absolute;
-                  top:50%;
+                  top: 50%;
                   left: 50%;
                   margin-top: -12px;
                   margin-left: -12px;
@@ -52,20 +52,23 @@
 
               }
             }
-            .action-links{
+            .action-links {
               display: flex;
-              li{
+              li {
                 margin-right: 26px;
               }
+            }
+            .like{
+              text-align: right;
             }
           }
         }
       }
     }
-    .right{
+    .right {
       width: 310px;
     }
-    p{
+    p {
       margin: 0;
     }
   }
