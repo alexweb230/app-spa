@@ -17,6 +17,7 @@
           border-radius: 2px;
         }
         .post-descr {
+          padding-top: 16px;
           .post-heading {
             display: grid;
             grid-template-columns: 1fr 10fr 1fr;
@@ -41,7 +42,7 @@
                   content: "";
                   width: 25px;
                   height: 25px;
-                  background-position: -82px -42px;
+                  background-position: -101px -40px;
                   background-image: $sprite;
                   position: absolute;
                   top: 50%;
@@ -60,6 +61,10 @@
             }
             .like{
               text-align: right;
+              font-size: rem(14);
+              color: $silver;
+              padding-left: 20px;
+              justify-self: end;
             }
           }
         }

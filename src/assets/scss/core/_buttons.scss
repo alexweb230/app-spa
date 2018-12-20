@@ -10,6 +10,19 @@
     height: 19px;
     background-position: 0px 0px;
   }
+  &.like{
+    position: relative;
+    &:before{
+      content: '';
+      background-image: $sprite;
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 16px;
+      height: 16px;
+      background-position: -82px -42px;
+    }
+  }
   &.soc {
     width: 43px;
     height: 38px;
