@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {DashboardService} from '../services/dashboard.service';
 
 @Component({
     selector: 'app-dashboard-detail',
@@ -8,12 +9,15 @@ import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 })
 export class DashboardDetailComponent implements OnInit {
     public dashId;
+    dashdetail = [];
 
-
-    constructor(private route: ActivatedRoute,
+    constructor(private dashService: DashboardService,
+                private route: ActivatedRoute,
                 private router: Router) {}
 
     ngOnInit() {
+        this.dashService.getDashDetail().subscribe(data => this.dashdetail = data);
+
         this.route.paramMap.subscribe((params: ParamMap) => {
             let id = parseInt(params.get('id'));
             this.dashId = id;

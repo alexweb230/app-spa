@@ -11,6 +11,8 @@ import {Router, ActivatedRoute, ParamMap} from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
     dashboard = [];
+
+
     public selectedId;
     tabs = {
         tab_1: 'all',
@@ -34,6 +36,9 @@ export class DashboardComponent implements OnInit {
 
     ngOnInit() {
         this.dashService.getDash().subscribe(data => this.dashboard = data);
+
+
+
 
         this.route.paramMap.subscribe((params: ParamMap) => {
             let id = parseInt(params.get('id'));
