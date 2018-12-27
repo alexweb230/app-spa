@@ -9,6 +9,7 @@ import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 export class DashboardDetailComponent implements OnInit {
     public dashId;
 
+
     constructor(private route: ActivatedRoute,
                 private router: Router) {}
 
@@ -38,5 +39,18 @@ export class DashboardDetailComponent implements OnInit {
 
         this.router.navigate(['/home', {id: selectedId}]);
     }
+
+    textDetail = [
+        {
+            src: '/assets/img/jpg/1.jpg',
+            text: 'lorem test'
+        },
+        {
+            src: '/assets/img/jpg/2.jpg',
+            text: 'lorem test-2'
+        },
+    ];
+
+
 
 }
