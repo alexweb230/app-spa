@@ -1,20 +1,21 @@
-
 <div class="main-box">
     <div class="content">
-        <h1>test detail{{dashId}}</h1>
-       
+        <h1>
+            {{dashdetail[dashId -1].titleDetail}}
+
+        </h1>
+
         <article>
             <img src="{{dashdetail[dashId -1].src}}" alt="">
             <p>{{dashdetail[dashId - 1].text}}</p>
         </article>
-        
-        
-        
-        <a (click)="goPrevious()">prev</a>
-        <br>
-        <a (click)="goNext()">next</a>
+
 
         <div>
+            <a (click)="goPrevious()">prev</a>
+            <br>
+            <a (click)="goNext()">next</a>
+
             <button (click)="gotoDashboard()">back</button>
         </div>
     </div>
