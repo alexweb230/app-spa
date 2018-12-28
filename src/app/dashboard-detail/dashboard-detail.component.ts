@@ -7,6 +7,9 @@ import {DashboardService} from '../services/dashboard.service';
     templateUrl: './dashboard-detail.component.html',
     styleUrls: ['./dashboard-detail.component.scss']
 })
+
+
+
 export class DashboardDetailComponent implements OnInit {
     public dashId;
     dashdetail = [];
@@ -40,8 +43,6 @@ export class DashboardDetailComponent implements OnInit {
     gotoDashboard() {
 
         let selectedId = this.dashId ? this.dashId : null;
-        console.log(selectedId);
-
         this.router.navigate(['/home', {id: selectedId}]);
     }
 
