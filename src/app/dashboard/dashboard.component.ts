@@ -12,8 +12,9 @@ import {Router, ActivatedRoute, ParamMap} from '@angular/router';
 export class DashboardComponent implements OnInit {
     dashboard = [];
 
-
     public selectedId;
+
+
     tabs = {
         tab_1: 'all',
         tab_2: 'Design',
