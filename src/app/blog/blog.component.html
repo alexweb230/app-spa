@@ -25,6 +25,11 @@
            </div>
         </figcaption>
       </fieldset>
+      <article>
+        <p *ngFor="let bl of blog">
+          {{bl.fulltext}}
+        </p>
+      </article>
     </div>
     <aside class="right"></aside>
   </div>

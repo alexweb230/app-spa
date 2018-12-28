@@ -13,7 +13,8 @@ export class DashboardDetailComponent implements OnInit {
 
     constructor(private dashService: DashboardService,
                 private route: ActivatedRoute,
-                private router: Router) {}
+                private router: Router) {
+    }
 
     ngOnInit() {
         this.dashService.getDashDetail().subscribe(data => this.dashdetail = data);
@@ -36,25 +37,12 @@ export class DashboardDetailComponent implements OnInit {
 
     }
 
-    gotoDashboard(){
+    gotoDashboard() {
 
         let selectedId = this.dashId ? this.dashId : null;
-         console.log(selectedId);
+        console.log(selectedId);
 
         this.router.navigate(['/home', {id: selectedId}]);
     }
-
-    textDetail = [
-        {
-            src: '/assets/img/jpg/1.jpg',
-            text: 'lorem test'
-        },
-        {
-            src: '/assets/img/jpg/2.jpg',
-            text: 'lorem test-2'
-        },
-    ];
-
-
 
 }

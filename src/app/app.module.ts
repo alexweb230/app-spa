@@ -22,6 +22,7 @@ import {FormsModule} from '@angular/forms';
 import { BlogComponent } from './blog/blog.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardDetailComponent } from './dashboard-detail/dashboard-detail.component';
+import {BlogService} from './services/blog.service';
 
 
 
@@ -50,7 +51,10 @@ import { DashboardDetailComponent } from './dashboard-detail/dashboard-detail.co
     FormsModule
 
   ],
-  providers: [DashboardService],
+  providers: [
+      DashboardService,
+      BlogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
