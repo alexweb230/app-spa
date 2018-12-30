@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component,  OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {DashboardService} from '../services/dashboard.service';
 
@@ -7,7 +7,6 @@ import {DashboardService} from '../services/dashboard.service';
     templateUrl: './dashboard-detail.component.html',
     styleUrls: ['./dashboard-detail.component.scss']
 })
-
 
 
 export class DashboardDetailComponent implements OnInit {
@@ -28,22 +27,31 @@ export class DashboardDetailComponent implements OnInit {
         });
     }
 
-
     goPrevious() {
         let previousId = this.dashId - 1;
         this.router.navigate(['/home', previousId]);
+
+        console.log(this.dashdetail[0]);
     }
 
     goNext() {
         let nextId = this.dashId + 1;
         this.router.navigate(['/home', nextId]);
-
     }
 
     gotoDashboard() {
-
         let selectedId = this.dashId ? this.dashId : null;
         this.router.navigate(['/home', {id: selectedId}]);
     }
+
+
+
+
+    // hideArrowPrev() {
+    //     if (this.router.url === '/home/1') {
+    //         return false;
+    //     }
+    //     return true;  
+    // }
 
 }

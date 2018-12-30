@@ -12,6 +12,20 @@
     "titlepost": "name-2",
     "src": "/assets/img/jpg/2.jpg",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et nulla odit officia possimus quae qui veniam? Dolore maiores, mollitia. Alias deserunt dicta ducimus earum excepturi quae quasi recusandae, suscipit! "
+  },
+
+  {
+
+    "titlepost": "name-3",
+    "src": "/assets/img/jpg/3.jpg",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et nulla odit officia possimus quae qui veniam? Dolore maiores, mollitia. Alias deserunt dicta ducimus earum excepturi quae quasi recusandae, suscipit! "
+  },
+
+  {
+
+    "titlepost": "name-4",
+    "src": "/assets/img/jpg/4.jpg",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias et nulla odit officia possimus quae qui veniam? Dolore maiores, mollitia. Alias deserunt dicta ducimus earum excepturi quae quasi recusandae, suscipit! "
   }
 
 ]
