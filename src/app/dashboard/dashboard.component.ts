@@ -39,8 +39,6 @@ export class DashboardComponent implements OnInit {
         this.dashService.getDash().subscribe(data => this.dashboard = data);
 
 
-
-
         this.route.paramMap.subscribe((params: ParamMap) => {
             let id = parseInt(params.get('id'));
 
@@ -48,8 +46,8 @@ export class DashboardComponent implements OnInit {
         });
     }
 
-    isSelected(dash){
-         return dash.id == this.selectedId;
+    isSelected(dash) {
+        return dash.id == this.selectedId;
     }
 
 }

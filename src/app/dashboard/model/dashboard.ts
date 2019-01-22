@@ -1,6 +1,7 @@
 export class Dashboard {
-     id: string;
+     id?: string;
     img: string;
     link: string;
     made: string;
+    text?: string;
 }

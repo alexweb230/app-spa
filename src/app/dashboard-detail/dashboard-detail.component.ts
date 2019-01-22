@@ -1,4 +1,4 @@
-import {Component,  OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {DashboardService} from '../services/dashboard.service';
 
@@ -19,7 +19,7 @@ export class DashboardDetailComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.dashService.getDashDetail().subscribe(data => this.dashdetail = data);
+        this.dashService.getDash().subscribe(data => this.dashdetail = data);
 
         this.route.paramMap.subscribe((params: ParamMap) => {
             let id = parseInt(params.get('id'));
@@ -43,8 +43,6 @@ export class DashboardDetailComponent implements OnInit {
         let selectedId = this.dashId ? this.dashId : null;
         this.router.navigate(['/home', {id: selectedId}]);
     }
-
-
 
 
     // hideArrowPrev() {
