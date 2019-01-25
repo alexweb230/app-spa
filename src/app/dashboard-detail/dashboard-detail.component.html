@@ -3,9 +3,20 @@
         <h1>
             {{dashdetail[dashId - 1].link}}
         </h1>
-        <p >
 
-        </p>
+        <div [dashtest]="d" *ngFor="let d of dashdetail">
+
+            <p>
+            {{dashtest.text}}
+            </p>
+
+
+        </div>
+
+
+        <!--<p *ngFor="let d of dashdetail">-->
+            <!--{{d.text}}-->
+        <!--</p>-->
 
 
         <article>

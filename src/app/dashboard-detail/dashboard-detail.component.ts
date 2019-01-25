@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {DashboardService} from '../services/dashboard.service';
+import {Dashboard} from "../dashboard/model/dashboard";
 
 @Component({
     selector: 'app-dashboard-detail',
@@ -12,6 +13,8 @@ import {DashboardService} from '../services/dashboard.service';
 export class DashboardDetailComponent implements OnInit {
     public dashId;
     dashdetail = [];
+
+    @Input() dashtest;
 
     constructor(private dashService: DashboardService,
                 private route: ActivatedRoute,
