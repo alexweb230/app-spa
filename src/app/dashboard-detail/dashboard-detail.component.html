@@ -1,17 +1,10 @@
-<div class="main-box dashboard-detail-box">
+<div *ngIf="dashdetail"  class="main-box dashboard-detail-box">
     <div class="content">
         <h1>
             {{dashdetail[dashId - 1].link}}
         </h1>
 
-        <div [dashtest]="d" *ngFor="let d of dashdetail">
 
-            <p>
-            {{dashtest.text}}
-            </p>
-
-
-        </div>
 
 
         <!--<p *ngFor="let d of dashdetail">-->

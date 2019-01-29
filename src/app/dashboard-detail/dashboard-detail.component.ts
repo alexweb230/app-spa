@@ -14,7 +14,7 @@ export class DashboardDetailComponent implements OnInit {
     public dashId;
     dashdetail = [];
 
-    @Input() dashtest;
+    @Input() dashtest: Dashboard;
 
     constructor(private dashService: DashboardService,
                 private route: ActivatedRoute,
