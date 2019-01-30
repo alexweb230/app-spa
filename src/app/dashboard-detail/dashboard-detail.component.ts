@@ -51,7 +51,9 @@ export class DashboardDetailComponent implements OnInit {
 
        goPrev(){
         console.log(this.dashId);
-
+        let prevId = this.dashId - 1;
+        console.log(prevId);
+        // this.router.navigate(['/detail', prevId]);
        }
 
 
