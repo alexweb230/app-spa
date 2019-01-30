@@ -40,6 +40,16 @@ export class DashboardDetailComponent implements OnInit {
         this.dashService.getDash().subscribe(data => this.dashdetail = data);
 
     }
+
+
+    goBack(): void {
+        this.location.back();
+        let selectedId = this.dashId ? this.dashId : null;
+        this.router.navigate(['/home', {id: selectedId}]);
+    }
+
+
+
         // goPrevious() {
         //     let previousId = this.dashId - 1;
         //     this.router.navigate(['/home', previousId]);
