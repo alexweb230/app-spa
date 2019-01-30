@@ -43,7 +43,7 @@ export class DashboardDetailComponent implements OnInit {
 
 
     goBack(): void {
-        this.location.back();
+        // this.location.back();
         let selectedId = this.dashId ? this.dashId : null;
         this.router.navigate(['/home', {id: selectedId}]);
     }

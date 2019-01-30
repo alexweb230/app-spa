@@ -30,20 +30,22 @@ export class DashboardComponent implements OnInit {
                 private route: ActivatedRoute) {
     }
 
-    onSelect(dash) {
-        this.router.navigate(['/home', dash.id]);
-    }
+    // onSelect(dash) {
+    //     this.router.navigate(['/home', dash.id]);
+    // }
 
 
     ngOnInit() {
         this.dashService.getDash().subscribe(data => this.dashboard = data);
 
+        const id = this.route.snapshot.paramMap.get('id');
+        this.selectedId = id;
 
-        this.route.paramMap.subscribe((params: ParamMap) => {
-            let id = parseInt(params.get('id'));
-
-            this.selectedId = id;
-        });
+        // this.route.paramMap.subscribe((params: ParamMap) => {
+        //     let id = parseInt(params.get('id'));
+        //
+        //     this.selectedId = id;
+        // });
     }
 
     isSelected(dash) {
