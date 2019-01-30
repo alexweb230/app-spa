@@ -15,8 +15,11 @@ export class DashboardService {
 
   constructor(private http: HttpClient) {}
 
-  getDash(): Observable<Dashboard[]>{
-    return this.http.get<Dashboard[]>(this._url);
+  getDash(): Observable<Dashboard[]> {
+
+     return this.http.get<Dashboard[]>(this._url );
+
+
   }
 
 }

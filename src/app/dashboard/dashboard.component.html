@@ -2,8 +2,11 @@
   <div class="content dashboard-grid">
     <mat-tab-group>
       <mat-tab label="{{tabs.tab_1}}">
-        <div class="dashboard-item" *ngFor="let dash of dashboard" (click)="onSelect(dash)">
-          <a  class="img" [class.selected]="isSelected(dash)">
+        <div class="dashboard-item"
+             *ngFor="let dash of dashboard">
+          <a  class="img"
+              routerLink="/detail/{{dash.id}}"
+              [class.selected]="isSelected(dash)">
             <img src="{{dash.img}}" alt="">
           </a>
           <a href="#" class="link">

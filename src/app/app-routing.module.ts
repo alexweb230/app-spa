@@ -16,7 +16,7 @@ const routes: Routes = [
         // ]
     },
     {
-        path: 'home/:id',
+        path: 'detail/:id',
         component: DashboardDetailComponent
     },
 

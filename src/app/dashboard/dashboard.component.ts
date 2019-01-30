@@ -30,9 +30,9 @@ export class DashboardComponent implements OnInit {
                 private route: ActivatedRoute) {
     }
 
-    onSelect(dash) {
-        this.router.navigate(['/home', dash.id]);
-    }
+    // onSelect(dash) {
+    //     this.router.navigate(['/home', dash.id]);
+    // }
 
 
     ngOnInit() {

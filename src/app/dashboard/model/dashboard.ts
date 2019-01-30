@@ -1,5 +1,5 @@
 export class Dashboard {
-     id?: string;
+     id?: number;
     img: string;
     link: string;
     made: string;
