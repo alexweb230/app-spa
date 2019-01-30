@@ -44,10 +44,15 @@ export class DashboardDetailComponent implements OnInit {
 
     goBack(): void {
         // this.location.back();
-        let selectedId = this.dashId ? this.dashId : null;
-        this.router.navigate(['/home', {id: selectedId}]);
+        let selId = this.dashId ? this.dashId : null;
+        this.router.navigate(['/home', {id: selId}]);
     }
 
+
+       goPrev(){
+        console.log(this.dashId);
+
+       }
 
 
         // goPrevious() {
@@ -61,20 +66,4 @@ export class DashboardDetailComponent implements OnInit {
         //     let nextId = this.dashId + 1;
         //     this.router.navigate(['/home', nextId]);
         // }
-
-        // gotoDashboard()
-        // {
-        //     let selectedId = this.dashId ? this.dashId : null;
-        //     this.router.navigate(['/home', {id: selectedId}]);
-        // }
-
-
-        // hideArrowPrev() {
-        //     if (this.router.url === '/home/1') {
-        //         return false;
-        //     }
-        //     return true;
-        // }
-
-
 }
