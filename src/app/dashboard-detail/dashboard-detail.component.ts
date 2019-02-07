@@ -52,12 +52,12 @@ export class DashboardDetailComponent implements OnInit {
        goPrev(){
           let count = (this.dashId - 2) + 1;
           this.dashId = count;
-          this.router.navigate(['/detail', this.dashId = count]);
+          this.router.navigate(['/detail', this.dashId]);
        }
         goNext(){
             let count = (this.dashId + 2) - 1;
             this.dashId = count;
-            this.router.navigate(['/detail', this.dashId = count]);
+            this.router.navigate(['/detail', this.dashId]);
         }
 
 
