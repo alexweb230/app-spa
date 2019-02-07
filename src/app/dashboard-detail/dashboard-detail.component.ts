@@ -49,27 +49,15 @@ export class DashboardDetailComponent implements OnInit {
     }
 
 
-       goPrev(){
-          let count = (this.dashId - 2) + 1;
-          this.dashId = count;
-          this.router.navigate(['/detail', this.dashId]);
-       }
-        goNext(){
-            let count = (this.dashId + 2) - 1;
-            this.dashId = count;
-            this.router.navigate(['/detail', this.dashId]);
-        }
+    goPrev() {
+        let count = (this.dashId - 2) + 1;
+        this.dashId = count;
+        this.router.navigate(['/detail', this.dashId]);
+    }
 
-
-        // goPrevious() {
-        //     let previousId = this.dashId - 1;
-        //     this.router.navigate(['/home', previousId]);
-        //
-        //     console.log(this.dashdetail[0]);
-        // }
-        //
-        // goNext() {
-        //     let nextId = this.dashId + 1;
-        //     this.router.navigate(['/home', nextId]);
-        // }
+    goNext() {
+        let count = (this.dashId + 2) - 1;
+        this.dashId = count;
+        this.router.navigate(['/detail', this.dashId]);
+    }
 }
