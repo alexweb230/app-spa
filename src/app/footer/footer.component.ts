@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {FooterService} from '../services/footer.service';
+import {Footer} from './footer';
 
 @Component({
     selector: 'app-footer',
@@ -6,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+    footerPost: Footer[];
     gridImg = [
         {
             src: '/assets/img/png/1.png'
@@ -45,6 +47,9 @@ export class FooterComponent implements OnInit {
             src: '/assets/img/png/12.png'
         },
     ];
+
+
+
     footerNav = [
         {navitem: 'Home'},
         {navitem: 'About'},
@@ -55,11 +60,15 @@ export class FooterComponent implements OnInit {
     ];
 
 
-    constructor() {
+    constructor(private footerservice: FooterService) {
     }
 
+    getPost(): void{
+        this.footerservice.getLastPost().subscribe(data => this.footerPost = data)
+    }
 
     ngOnInit() {
+        this.getPost();
     }
 
 }

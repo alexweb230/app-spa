@@ -27,46 +27,20 @@
     </section>
     <section class="inner-footer-item">
       <h3 class="h3">Latest Posts</h3>
-      <p>
-        <a href="#" class="link-title">
-          Curabitur pharetra, ante!
+      <p *ngFor="let footPost of footerPost">
+        <a href="{{footPost.link}}" class="link-title">
+          {{footPost.linktitle}}
         </a>
-        <small>25 April 2013</small>
-      </p>
-      <p>
-        <a href="#" class="link-title">
-          Gentle Marimba by Alastair Cameron
-        </a>
-        <small>01 May 2013</small>
-      </p>
-      <p>
-        <a href="#" class="link-title">
-          Curabitur pharetra, ante!
-        </a>
-        <small>25 April 2013</small>
-      </p>
-      <p>
-        <a href="#" class="link-title">
-          Gentle Marimba by Alastair Cameron
-        </a>
-        <small>01 May 2013</small>
+        <small>{{footPost.date}}</small>
       </p>
     </section>
     <section class="inner-footer-item">
       <h3 class="h3">LATEST COMMENTS</h3>
-      <a href="#" class="link-block">
-        Dann Petty on Curabitur pharetra, ante
-        lobortis dictum.
-      </a>
-      <a href="#" class="link-block">
-        Kevin Kalde on Aliquam vulputate, pede vel
-        vehicula accumsan, mi neque rutrum erat,
-        eu congue orci lorem eget lorem.
-      </a>
-      <a href="#" class="link-block">
-        Sean McCabe on Class aptent taciti sociosqu
-        ad litora torquent per
-      </a>
+      <div class="link" *ngFor="let footPost of footerPost">
+        <a href="#" class="link-block">
+          {{footPost.commentLink}}
+        </a>
+      </div>
     </section>
     <section class="inner-footer-item">
       <h3 class="h3">FLICKR PHOTOSTREAM</h3>
