@@ -15,6 +15,7 @@ export class DashboardComponent implements OnInit {
     public selectedId;
 
 
+
     tabs = {
         tab_1: 'all',
         tab_2: 'Design',

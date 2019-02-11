@@ -6,7 +6,8 @@
              *ngFor="let dash of dashboard">
           <a  class="img"
               routerLink="/detail/{{dash.id}}"
-              [class.selected]="isSelected(dash)">
+              [class.selected]="isSelected(dash)"
+              appDashhover>
             <img src="{{dash.img}}" alt="">
           </a>
           <a href="#" class="link">
