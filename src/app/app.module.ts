@@ -23,6 +23,7 @@ import { BlogComponent } from './blog/blog.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardDetailComponent } from './dashboard-detail/dashboard-detail.component';
 import {BlogService} from './services/blog.service';
+import { DashhoverDirective } from './dashhover.directive';
 
 
 
@@ -37,7 +38,8 @@ import {BlogService} from './services/blog.service';
     SearchPipe,
     BlogComponent,
     NotfoundComponent,
-    DashboardDetailComponent
+    DashboardDetailComponent,
+    DashhoverDirective
   ],
   imports: [
     BrowserModule,
