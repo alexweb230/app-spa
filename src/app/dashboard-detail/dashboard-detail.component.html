@@ -4,22 +4,15 @@
             {{dashdetail[dashId - 1].id}}
 
         </h1>
-
-
-
         <article>
             <img src="{{dashdetail[dashId - 1].img}}" alt="">
             <p>{{dashdetail[dashId - 1].text}}</p>
         </article>
 
 
-        <div>
+        <div class="btn-bottoms">
             <a (click)="goPrev()">prev</a>
-            <br>
-            <a (click)="goNext()">
-                next
-            </a>
-            <br>
+            <a (click)="goNext()">next</a>
             <button (click)="goBack()">back</button>
         </div>
     </div>
