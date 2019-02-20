@@ -14,56 +14,5 @@
     margin-right: 2px;
   }
 }
-.mat-tab-label-container{
-  padding-bottom: 30px;
-}
-.mat-tab-list {
-  .mat-tab-labels {
-    justify-content: center;
-    .mat-tab-label {
-      padding-left: 0;
-      padding-right: 0;
-      min-width: initial;
-      margin-right: 15px;
-      opacity: 1;
-      height: 35px;
-      &:nth-last-child(1) {
-        margin-right: 0;
-      }
-      .mat-tab-label-content {
-        color: $white;
-        font-weight: $bold;
-        font-size: rem(13);
-        text-transform: capitalize;
-        position: relative;
-        padding-right: 17px;
-        &:after {
-          content: '/';
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-      }
-      &:nth-last-child(1) {
-        .mat-tab-label-content {
-          padding-right: 0;
-          &:after {
-            content: '';
-          }
-        }
-      }
-    }
-  }
-  .mat-ink-bar {
-    background-color: $white !important;
-  }
 
-}
-.mat-tab-body-wrapper{
-  .mat-tab-body-content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
 

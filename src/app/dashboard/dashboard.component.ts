@@ -17,16 +17,15 @@ export class DashboardComponent implements OnInit {
     public searchDash: string = '';
 
 
-
-    tabs = {
-        tab_1: 'all',
-        tab_2: 'Design',
-        tab_3: 'Branding',
-        tab_4: 'Graphic',
-        tab_5: 'Animation',
-        tab_6: 'Illustration',
-        tab_7: 'Photography',
-    }
+    tmpNav = [
+        'all',
+        'Design',
+        'Branding',
+        'Graphic',
+        'Animation',
+        'Illustration',
+        'Photography',
+    ]
 
     constructor(private dashService: DashboardService,
                 private router: Router,
@@ -52,7 +51,7 @@ export class DashboardComponent implements OnInit {
     }
 
     isSelected(dash) {
-         return dash.id == this.selectedId;
+        return dash.id == this.selectedId;
     }
 
 }
