@@ -1,7 +1,24 @@
 <div class="main-box dashboard">
   <div class="content dashboard-grid">
+    <input type="text" [(ngModel)]="searchDash">
+
     <mat-tab-group>
       <mat-tab label="{{tabs.tab_1}}">
+        <div class="dashboard-item"
+             *ngFor="let dash of dashboard | searchDashboard:searchDash">
+          <a  class="img"
+              routerLink="/detail/{{dash.id}}"
+              [class.selected]="isSelected(dash)"
+              appDashhover>
+            <img src="{{dash.img}}" alt="">
+          </a>
+          <a href="#" class="link">
+            {{dash.link}}
+          </a>
+          <span class="made">{{dash.made}}</span>
+        </div>
+      </mat-tab>
+      <mat-tab label="{{tabs.tab_2}}">
         <div class="dashboard-item"
              *ngFor="let dash of dashboard">
           <a  class="img"
@@ -16,7 +33,6 @@
           <span class="made">{{dash.made}}</span>
         </div>
       </mat-tab>
-      <mat-tab label="{{tabs.tab_2}}"> Content 2 </mat-tab>
       <mat-tab label="{{tabs.tab_3}}"> Content 3 </mat-tab>
       <mat-tab label="{{tabs.tab_4}}"> Content 3 </mat-tab>
       <mat-tab label="{{tabs.tab_5}}"> Content 3 </mat-tab>

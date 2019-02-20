@@ -14,6 +14,8 @@ export class DashboardComponent implements OnInit {
 
     public selectedId;
 
+    public searchDash: string = '';
+
 
 
     tabs = {

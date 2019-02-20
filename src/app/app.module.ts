@@ -17,13 +17,13 @@ import {ModalGalleryModule} from 'angular-modal-gallery';
 import { FooterComponent } from './footer/footer.component';
 import {DashboardService} from './services/dashboard.service';
 import {HttpClientModule} from '@angular/common/http';
-import { SearchPipe } from './pipes/search.pipe';
 import {FormsModule} from '@angular/forms';
 import { BlogComponent } from './blog/blog.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardDetailComponent } from './dashboard-detail/dashboard-detail.component';
 import {BlogService} from './services/blog.service';
 import { DashhoverDirective } from './dashhover.directive';
+import { SearchDashboardPipe } from './search-dashboard.pipe';
 
 
 
@@ -35,11 +35,11 @@ import { DashhoverDirective } from './dashhover.directive';
     MainNavComponent,
     DashboardComponent,
     FooterComponent,
-    SearchPipe,
     BlogComponent,
     NotfoundComponent,
     DashboardDetailComponent,
-    DashhoverDirective
+    DashhoverDirective,
+    SearchDashboardPipe
   ],
   imports: [
     BrowserModule,
