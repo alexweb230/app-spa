@@ -16,6 +16,7 @@ export class DashboardComponent implements OnInit {
 
     public searchDash: string = '';
 
+    public displayName: boolean = true;
 
     tmpNav = [
         'all',
