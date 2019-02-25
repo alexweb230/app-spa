@@ -18,6 +18,9 @@ export class DashboardComponent implements OnInit {
 
 
 
+
+
+
     display: string = 'all';
 
 
@@ -62,11 +65,13 @@ export class DashboardComponent implements OnInit {
 
     getFilterDash(nav){
         let navName = nav.name;
-        console.log(navName);
-        if(navName === 'desing'){
-           this.display = 'desing';
 
-        }
+        if(navName === navName){
+            this.display = navName;}
+
+        // } else if(navName === 'desing'){
+        //     this.display = 'desing';
+        // }
 
 
 
