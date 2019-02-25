@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {DashboardService} from '../services/dashboard.service';
 
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
+import {Dashboard} from "./model/dashboard";
 
 @Component({
     selector: 'app-dashboard',
@@ -17,6 +18,8 @@ export class DashboardComponent implements OnInit {
     public searchDash: string = '';
 
     public displayName: boolean = true;
+
+    catName: string = 'desing';
 
     tmpNav = [
         'all',
@@ -54,5 +57,9 @@ export class DashboardComponent implements OnInit {
     isSelected(dash) {
         return dash.id == this.selectedId;
     }
+
+
+
+
 
 }
