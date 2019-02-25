@@ -3,7 +3,6 @@ import {Component, OnInit} from '@angular/core';
 import {DashboardService} from '../services/dashboard.service';
 
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
-import {Dashboard} from "./model/dashboard";
 
 @Component({
     selector: 'app-dashboard',
@@ -18,6 +17,8 @@ export class DashboardComponent implements OnInit {
     public searchDash: string = '';
 
     public displayName: boolean = true;
+
+    display: string = 'all';
 
     catName: string = 'desing';
 
@@ -58,7 +59,13 @@ export class DashboardComponent implements OnInit {
         return dash.id == this.selectedId;
     }
 
+    getFilterDash(){
 
+
+      this.display = 'desing';
+
+
+    }
 
 
 

@@ -4,6 +4,7 @@
     <ul class="tmp-nav content">
         <li
                 *ngFor="let tmpnav of tmpNav"
+                (click)="getFilterDash()"
                 class="tmp-nav-el">
             {{tmpnav}}
         </li>
@@ -14,15 +15,40 @@
 
         <div class="dashboard-item"
              routerLink="/detail/{{dash.id}}"
+             [ngSwitch]="display"
              *ngFor="let dash of dashboard | searchDashboard:searchDash">
-            <div *ngIf="dash.category === catName">
-                <a class="img"
-                   [class.selected]="isSelected(dash)"
-                   appDashhover>
-                    <img src="{{dash.img}}" alt="">
-                </a>
-                <span class="link">{{dash.link}}</span>
-                <span class="made">{{dash.made}}</span>
+            <div *ngSwitchCase="'all'">
+                <div>
+                    <a class="img"
+                       [class.selected]="isSelected(dash)"
+                       appDashhover>
+                        <img src="{{dash.img}}" alt="">
+                    </a>
+                    <span class="link">{{dash.link}}</span>
+                    <span class="made">{{dash.made}}</span>
+                </div>
+            </div>
+            <div *ngSwitchCase="'desing'">
+                <div *ngIf="dash.category === catName">
+                    <a class="img"
+                       [class.selected]="isSelected(dash)"
+                       appDashhover>
+                        <img src="{{dash.img}}" alt="">
+                    </a>
+                    <span class="link">{{dash.link}}</span>
+                    <span class="made">{{dash.made}}</span>
+                </div>
+            </div>
+            <div *ngSwitchCase="'work'">
+                <div *ngIf="dash.category === catName">
+                    <a class="img"
+                       [class.selected]="isSelected(dash)"
+                       appDashhover>
+                        <img src="{{dash.img}}" alt="">
+                    </a>
+                    <span class="link">{{dash.link}}</span>
+                    <span class="made">{{dash.made}}</span>
+                </div>
             </div>
         </div>
     </div>
