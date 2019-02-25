@@ -3,6 +3,9 @@ import {Component, OnInit} from '@angular/core';
 import {DashboardService} from '../services/dashboard.service';
 
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
+import {transformAll} from "@angular/compiler/src/render3/r3_ast";
+import {Dashboard} from "./model/dashboard";
+
 
 
 @Component({
@@ -65,12 +68,17 @@ export class DashboardComponent implements OnInit {
         let navName = pnav.name;
         console.log(navName);
 
-       let dd =  this.dashboard.filter(dash => {
-            return dash.category.includes('desing');
 
-        });
 
-       console.log(dd);
+            let dd =  this.dashboard.filter(dash => {
+                return dash.category.includes('illustration');
+
+            });
+
+
+
+
+        console.log(dd);
 
 
 
