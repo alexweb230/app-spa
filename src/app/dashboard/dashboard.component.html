@@ -1,45 +1,32 @@
 <div class="main-box dashboard">
 
 
+
     <ul class="tmp-nav content">
         <li
-                *ngFor="let nav of PageNav"
-                (click)="getFilterDash(nav)"
+                *ngFor="let pnav of PageNav"
                 class="tmp-nav-el">
-            {{nav.name}}
+            {{pnav.name}}
+        </li>
+        <li class="tmp-nav-el">
+            <input type="text" [(ngModel)]="searchDash">
         </li>
     </ul>
 
 
     <div class="content dashboard-grid">
-
         <div class="dashboard-item"
              routerLink="/detail/{{dash.id}}"
-             [ngSwitch]="display"
              *ngFor="let dash of dashboard | searchDashboard:searchDash">
-            <div *ngSwitchCase="'all'">
-                <div>
-                    <a class="img"
-                       [class.selected]="isSelected(dash)"
-                       appDashhover>
-                        <img src="{{dash.img}}" alt="">
-                    </a>
-                    <span class="link">{{dash.link}}</span>
-                    <span class="made">{{dash.made}}</span>
-                </div>
-            </div>
-            <div *ngSwitchCase="'desing'">
-                <div *ngIf="dash.category === catName">
-                    <a class="img"
-                       [class.selected]="isSelected(dash)"
-                       appDashhover>
-                        <img src="{{dash.img}}" alt="">
-                    </a>
-                    <span class="link">{{dash.link}}</span>
-                    <span class="made">{{dash.made}}</span>
-                </div>
-            </div>
-
+            <a class="img"
+               [class.selected]="isSelected(dash)"
+               appDashhover>
+                <img src="{{dash.img}}" alt="">
+            </a>
+            <span href="#" class="link">
+        {{dash.link}}
+      </span>
+            <span class="made">{{dash.made}}</span>
         </div>
     </div>
 </div>

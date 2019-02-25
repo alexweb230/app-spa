@@ -17,8 +17,8 @@ export class DashboardComponent implements OnInit {
     public searchDash: string = '';
 
 
-    display: string = 'all';
-    catName: string = '';
+    // display: string = 'all';
+    // catName: string = '';
 
 
     PageNav = [
@@ -59,15 +59,15 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    getFilterDash(nav) {
-        let navName = nav.name;
-
-        if (navName === navName) {
-            this.display = navName;
-            this.catName = navName;
-        }
-
-    }
+    // getFilterDash(nav) {
+    //     let navName = nav.name;
+    //
+    //     if (navName === navName) {
+    //         this.display = navName;
+    //         this.catName = navName;
+    //     }
+    //
+    // }
 
 
 }
