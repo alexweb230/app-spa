@@ -34,7 +34,7 @@
   },
   {
     "id": "5",
-    "category": "work",
+    "category": "dranding",
     "img": "/assets/img/jpg/5.jpg",
     "link": "Options in Shop",
     "made": "Branding / Design",
@@ -42,7 +42,7 @@
   },
   {
     "id": "6",
-    "category": "work",
+    "category": "dranding",
     "img": "/assets/img/jpg/6.jpg",
     "link": "Portfolio in Shop",
     "made": "Branding / Design",
@@ -50,7 +50,7 @@
   },
   {
     "id": "7",
-    "category": "work",
+    "category": "graphic",
     "img": "/assets/img/jpg/7.jpg",
     "link": "Testing-2 in Shop",
     "made": "Branding / Design",
@@ -58,7 +58,7 @@
   },
   {
     "id": "8",
-    "category": "animation",
+    "category": "graphic",
     "img": "/assets/img/jpg/8.jpg",
     "link": "Working in Desinger",
     "made": "Branding / Design",
@@ -74,7 +74,7 @@
   },
   {
     "id": "10",
-    "category": "animation",
+    "category": "illustration",
     "img": "/assets/img/jpg/10.jpg",
     "link": "Developing in Shop",
     "made": "Branding / Design",
@@ -82,7 +82,7 @@
   },
   {
     "id": "11",
-    "category": "animation",
+    "category": "photography",
     "img": "/assets/img/jpg/11.jpg",
     "link": "Working in Shop",
     "made": "Branding / Design",
@@ -90,7 +90,7 @@
   },
   {
     "id": "12",
-    "category": "animation",
+    "category": "photography",
     "img": "/assets/img/jpg/12.jpg",
     "link": "Working in Shop",
     "made": "Branding / Design",

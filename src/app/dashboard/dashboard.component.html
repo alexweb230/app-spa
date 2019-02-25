@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div *ngSwitchCase="'desing'">
-                <div *ngIf="dash.category === 'desing'">
+                <div *ngIf="dash.category === catName">
                     <a class="img"
                        [class.selected]="isSelected(dash)"
                        appDashhover>
@@ -39,17 +39,7 @@
                     <span class="made">{{dash.made}}</span>
                 </div>
             </div>
-            <!--<div *ngSwitchCase="catName">-->
-                <!--<div *ngIf="dash.category === catName">-->
-                    <!--<a class="img"-->
-                       <!--[class.selected]="isSelected(dash)"-->
-                       <!--appDashhover>-->
-                        <!--<img src="{{dash.img}}" alt="">-->
-                    <!--</a>-->
-                    <!--<span class="link">{{dash.link}}</span>-->
-                    <!--<span class="made">{{dash.made}}</span>-->
-                <!--</div>-->
-            <!--</div>-->
+
         </div>
     </div>
 </div>

@@ -17,21 +17,18 @@ export class DashboardComponent implements OnInit {
     public searchDash: string = '';
 
 
-
-
-
-
     display: string = 'all';
+    catName: string = '';
 
 
     PageNav = [
-        { name: 'all'},
-        { name: 'desing'},
-        { name: 'dranding'},
-        { name: 'graphic'},
-        { name: 'animation'},
-        { name: 'illustration'},
-        { name: 'photography'}
+        {name: 'all'},
+        {name: 'desing'},
+        {name: 'dranding'},
+        {name: 'graphic'},
+        {name: 'animation'},
+        {name: 'illustration'},
+        {name: 'photography'}
     ]
 
     constructor(private dashService: DashboardService,
@@ -62,30 +59,15 @@ export class DashboardComponent implements OnInit {
     }
 
 
-
-    getFilterDash(nav){
+    getFilterDash(nav) {
         let navName = nav.name;
 
-        if(navName === navName){
-            this.display = navName;}
-
-        // } else if(navName === 'desing'){
-        //     this.display = 'desing';
-        // }
-
-
-
-
-
-
-
-
-
-
-
+        if (navName === navName) {
+            this.display = navName;
+            this.catName = navName;
+        }
 
     }
-
 
 
 }
