@@ -5,6 +5,7 @@
     <ul class="tmp-nav content">
         <li
                 *ngFor="let pnav of PageNav"
+                (click)="getFilterDash(pnav)"
                 class="tmp-nav-el">
             {{pnav.name}}
         </li>

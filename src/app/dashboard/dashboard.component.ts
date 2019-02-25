@@ -4,6 +4,7 @@ import {DashboardService} from '../services/dashboard.service';
 
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
 
+
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -59,15 +60,21 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    // getFilterDash(nav) {
-    //     let navName = nav.name;
-    //
-    //     if (navName === navName) {
-    //         this.display = navName;
-    //         this.catName = navName;
-    //     }
-    //
-    // }
+
+    getFilterDash(pnav, value) {
+        let navName = pnav.name;
+        console.log(navName);
+
+       let dd =  this.dashboard.filter(dash => {
+            return dash.category.includes('desing');
+
+        });
+
+       console.log(dd);
+
+
+
+    }
 
 
 }
