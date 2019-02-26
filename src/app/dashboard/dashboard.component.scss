@@ -60,6 +60,7 @@
       margin-right: 12px;
       line-height: 11px;
       cursor: pointer;
+      text-transform: capitalize;
       &:after {
         content: '';
         display: inline-block;

@@ -71,7 +71,7 @@ export class DashboardComponent implements OnInit {
 
 
             let dd =  this.dashboard.filter(dash => {
-                return dash.category.includes('illustration');
+                return dash.category.includes('desing');
 
             });
 
