@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import {DashboardService} from '../services/dashboard.service';
 
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
-import {transformAll} from "@angular/compiler/src/render3/r3_ast";
+
 import {Dashboard} from "./model/dashboard";
 
 
@@ -56,6 +56,7 @@ export class DashboardComponent implements OnInit {
         //
         //     this.selectedId = id;
         // });
+
     }
 
     isSelected(dash) {
@@ -64,24 +65,17 @@ export class DashboardComponent implements OnInit {
 
 
 
-    getFilterDash(pnav, value) {
+
+    getFilterDash(pnav, dash) {
         let navName = pnav.name;
         console.log(navName);
+        // dash =  this.dashboard.filter(das => {
+        //         return das.category.includes('desing');
+        //
+        //     });
+        dash = this.dashboard
 
-
-
-            let dd =  this.dashboard.filter(dash => {
-                return dash.category.includes('desing');
-
-            });
-
-
-
-
-        console.log(dd);
-
-
-
+        console.log(dash);
     }
 
 

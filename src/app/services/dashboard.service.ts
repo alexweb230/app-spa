@@ -16,10 +16,6 @@ export class DashboardService {
     }
 
     getDash(): Observable<Dashboard[]> {
-
         return this.http.get<Dashboard[]>(this._url);
-
-
     }
-
 }
