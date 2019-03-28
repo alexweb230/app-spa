@@ -64,18 +64,20 @@ export class DashboardComponent implements OnInit {
     }
 
 
+    filters = {}
+
+    getSort(val) {
 
 
-    getFilterDash(pnav, dash) {
-        let navName = pnav.name;
-        console.log(navName);
-        // dash =  this.dashboard.filter(das => {
-        //         return das.category.includes('desing');
-        //
-        //     });
-        dash = this.dashboard
 
-        console.log(dash);
+        this.filters = this.dashboard.filter(das => {
+                return das.category.includes(val);
+
+            });
+
+        console.log(this.filters);
+
+
     }
 
 
