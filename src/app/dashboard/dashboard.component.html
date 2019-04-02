@@ -18,7 +18,7 @@
     <div class="content dashboard-grid">
         <div class="dashboard-item"
              routerLink="/detail/{{dash.id}}"
-             *ngFor="let dash of filters | searchDashboard:searchDash">
+             *ngFor="let dash of dashboard | searchDashboard:searchDash">
             <a class="img"
                [class.selected]="isSelected(dash)"
                appDashhover>

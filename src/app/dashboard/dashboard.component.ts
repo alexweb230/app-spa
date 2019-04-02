@@ -63,16 +63,16 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    public filters: Dashboard[] = this.dashboard;
+    // public filters: Dashboard[] = this.dashboard;
 
 
 
     getSort(val) {
-        // this.filters = this.dashboard.filter(das => {
-        //     return das.category.includes(val);
-        // });
+        this.dashboard = this.dashboard.filter(das => {
+            return das.category.includes(val);
+        });
 
-        console.log(this.filters);
+        // console.log(this.filters);
         console.log(this.dashboard);
     }
 
