@@ -15,6 +15,8 @@ import {Dashboard} from "./model/dashboard";
 export class DashboardComponent implements OnInit {
     dashboard = [];
 
+    public filters: Dashboard[] = this.dashboard;
+
     public selectedId;
 
     public searchDash: string = '';
@@ -63,7 +65,7 @@ export class DashboardComponent implements OnInit {
     }
 
 
-    public filters: Dashboard[] = this.dashboard;
+
 
 
 

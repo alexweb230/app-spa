@@ -1,13 +1,24 @@
 <div class="main-box dashboard">
 
 
-
     <ul class="tmp-nav content">
         <li
-                *ngFor="let pnav of PageNav"
+
                 (click)="getSort('')"
                 class="tmp-nav-el">
-            {{pnav.name}}
+            {{PageNav[0].name}}
+        </li>
+        <li
+
+                (click)="getSort('desing')"
+                class="tmp-nav-el">
+            {{PageNav[1].name}}
+        </li>
+        <li
+
+                (click)="getSort('dranding')"
+                class="tmp-nav-el">
+            {{PageNav[2].name}}
         </li>
         <li class="tmp-nav-el">
             <input type="text" [(ngModel)]="searchDash">
