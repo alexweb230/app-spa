@@ -4,7 +4,8 @@ import {DashboardService} from '../services/dashboard.service';
 
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
 
-import {Dashboard} from "./model/dashboard";
+import {Dashboard} from './model/dashboard';
+
 
 
 @Component({
@@ -34,7 +35,7 @@ export class DashboardComponent implements OnInit {
         {name: 'animation'},
         {name: 'illustration'},
         {name: 'photography'}
-    ]
+    ];
 
     constructor(private dashService: DashboardService,
                 private router: Router,
@@ -58,6 +59,8 @@ export class DashboardComponent implements OnInit {
         //     this.selectedId = id;
         // });
 
+
+
     }
 
     isSelected(dash) {
@@ -74,8 +77,8 @@ export class DashboardComponent implements OnInit {
             return das.category.includes(val);
         });
 
-        // console.log(this.filters);
-        console.log(this.dashboard);
+         console.log(this.filters);
+        // console.log(this.dashboard);
     }
 
 

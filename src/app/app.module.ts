@@ -28,6 +28,8 @@ import { SearchDashboardPipe } from './search-dashboard.pipe';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,7 @@ import { SearchDashboardPipe } from './search-dashboard.pipe';
     ModalGalleryModule.forRoot(),
     HttpClientModule,
     FormsModule
+
 
   ],
   providers: [
